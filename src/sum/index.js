@@ -10,6 +10,19 @@
 * sum(-1, 13); // 12
 */
 const sum = (a, b) => {
+
+	if(typeof a == 'number' && typeof b == 'number'){
+		return a + b;
+	}else{
+		throw error;
+	}
+	if(typeof a == 'NaN' || typeof b == 'NaN'){
+		throw error;
+	}
+
+	if(typeof a !== 'string' && typeof a !== 'number'){
+
+	}
   /* your logic here...*/
 };
 

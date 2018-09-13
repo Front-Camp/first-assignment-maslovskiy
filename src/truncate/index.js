@@ -8,6 +8,14 @@
  * @return {string} truncated string
  */
 const truncate = (str, length = 0, replacer = '...') => {
+		let str2 = '';
+		if(length < str.length && typeof str === 'string')){
+			for (var i = 0; i < length; i++) {
+				str2 = str2 + str[i];
+			}
+			str2 += replacer;
+		}
+			return str2;
   /* your logic here...*/
 };
 
